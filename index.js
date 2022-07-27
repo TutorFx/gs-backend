@@ -8,7 +8,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
 
-require('./routes/index')(app);
+require('./api/index')(app);
 require('./api/auth')(app);
 require('./api/blog')(app);
 require('./api/docs')(app);
